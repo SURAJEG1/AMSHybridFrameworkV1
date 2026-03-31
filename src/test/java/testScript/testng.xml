@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="regression">
+
+	<listeners>
+		<listener class-name="listenerUtility.Listener"></listener>
+	</listeners>
+
+	<test thread-count="5" name="Functional">
+		<classes>
+			<class name="testScript.BaseTestClass" />
+			<class name="testScript.Tc004_MouseHoverAction" />
+			<class name="testScript.Tc002_StaticDropdownAmazon" />
+			<class name="testScript.Tc003_DynamicSearchAndListDropdown" />
+		</classes>
+	</test> <!--
+	Test -->
+
+
+	<test name="smoke">
+		<classes>
+			<class name="testScript.Tc004_Iframe" />
+			<class name="testScript.Tc001_LoginHRMS" />
+		</classes>
+	</test>
+
+</suite> <!--
+Suite -->
