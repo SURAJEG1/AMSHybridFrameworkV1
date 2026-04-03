@@ -9,42 +9,56 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
+import extentReportUtility.ExtentReportManager;
+
 
 public class Listener implements ITestListener{
-
-	WebDriver driver;
 	
-	public void onTestStart(ITestResult result) {
-		System.out.println(result.getName() + ": Testcase Started...");
-	}
-
+	private static ExtentReports extentreports;
+	private static ExtentTest test;
 	
-	public void onTestSuccess(ITestResult result) {
-		System.out.println(result.getName() + ": Successfully Executed...");
-	}
 
-	
-	public void onTestFailure(ITestResult result) {
-		try {
-			
-			System.out.println(result.getName() + ": Got failed & Screenshot Captured...");
-			TakesScreenshot ts = (TakesScreenshot)driver;
-			String timestamp = new SimpleDateFormat("yyyyMMdd_HHssMM").format(new Date());
-			File source = ts.getScreenshotAs(OutputType.FILE);
-			File destination =  new File("E:\\InfoEge Automation Project\\practice\\Screenshot\\failed\\testcase"+timestamp+".png");
-			FileUtils.copyFile(source, destination);
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+	@Override
+	public void onStart(ITestContext context) 
+	{
+		extentreports = ExtentReportManager.getExtentReports();
 	}
 	
+	@Override
+	public void onTestStart(ITestResult result) 
+	{
+		test = extentreports.createTest(result.getName());
+		//System.out.println(result.getName() + ": Testcase Started...");
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) 
+	{
+		test.log(Status.PASS, "Test case PASSED");
+		//System.out.println(result.getName() + ": Successfully Executed...");
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) 
+	{
+		test.log(Status.FAIL, "Test case FAILED");
+		
+	}
 	
 	
-	
+	@Override
+	public void onFinish(ITestContext context) 
+	{
+		extentreports.flush();
+	}
 	
 	
 	

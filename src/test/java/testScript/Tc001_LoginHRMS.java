@@ -29,7 +29,7 @@ public class Tc001_LoginHRMS extends BaseTestClass{
 	@DataProvider(name = "credentials")
 	public Object[][] dataDriven() throws IOException
 	{
-		String filePath = "E:\\InfoEge Automation Project\\practice\\ExcelFile\\loginDetails.xlsx";
+		String filePath = "E:\\InfoEge Automation Project\\AMSHybridFrameworkV1\\ExcelFile\\loginDetails.xlsx";
 		String sheetName = "login";
 		
 		return ReadExcelFile.excelDriven(filePath, sheetName);

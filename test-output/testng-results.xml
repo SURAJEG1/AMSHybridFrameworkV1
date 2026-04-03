@@ -1,167 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-31T02:09:34 IST" name="Suite" finished-at="2026-03-31T02:11:59 IST" duration-ms="144873">
+  <suite started-at="2026-04-03T18:04:28 IST" name="Default suite" finished-at="2026-04-03T18:04:53 IST" duration-ms="25556">
     <groups>
     </groups>
-    <test started-at="2026-03-31T02:09:34 IST" name="regression" finished-at="2026-03-31T02:10:24 IST" duration-ms="49769">
-      <class name="testScript.Tc003_DynamicSearchAndListDropdown">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScript.Tc003_DynamicSearchAndListDropdown@7c6908d7]" started-at="2026-03-31T02:10:02 IST" name="setup" finished-at="2026-03-31T02:10:04 IST" duration-ms="1738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="dynamicSearchAndListDropdown_ClickSelect()[pri:0, instance:testScript.Tc003_DynamicSearchAndListDropdown@7c6908d7]" started-at="2026-03-31T02:10:04 IST" name="dynamicSearchAndListDropdown_ClickSelect" finished-at="2026-03-31T02:10:21 IST" duration-ms="16771" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dynamicSearchAndListDropdown_ClickSelect -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.Tc003_DynamicSearchAndListDropdown@7c6908d7]" started-at="2026-03-31T02:10:21 IST" name="tearDown" finished-at="2026-03-31T02:10:24 IST" duration-ms="3327" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testScript.Tc003_DynamicSearchAndListDropdown -->
-      <class name="testScript.Tc004_MouseHoverAction">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScript.Tc004_MouseHoverAction@3857f613]" started-at="2026-03-31T02:09:34 IST" name="setup" finished-at="2026-03-31T02:09:38 IST" duration-ms="3155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="mouseHoverRightClickActionOnInstagram()[pri:0, instance:testScript.Tc004_MouseHoverAction@3857f613]" started-at="2026-03-31T02:09:38 IST" name="mouseHoverRightClickActionOnInstagram" finished-at="2026-03-31T02:09:45 IST" duration-ms="7033" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mouseHoverRightClickActionOnInstagram -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.Tc004_MouseHoverAction@3857f613]" started-at="2026-03-31T02:09:45 IST" name="tearDown" finished-at="2026-03-31T02:09:48 IST" duration-ms="3283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testScript.Tc004_MouseHoverAction -->
-      <class name="testScript.Tc002_StaticDropdownAmazon">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScript.Tc002_StaticDropdownAmazon@198b6731]" started-at="2026-03-31T02:09:48 IST" name="setup" finished-at="2026-03-31T02:09:50 IST" duration-ms="1582" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyAmazonStaticDropdown()[pri:0, instance:testScript.Tc002_StaticDropdownAmazon@198b6731]" started-at="2026-03-31T02:09:50 IST" name="verifyAmazonStaticDropdown" finished-at="2026-03-31T02:09:59 IST" duration-ms="9481" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAmazonStaticDropdown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.Tc002_StaticDropdownAmazon@198b6731]" started-at="2026-03-31T02:09:59 IST" name="tearDown" finished-at="2026-03-31T02:10:02 IST" duration-ms="3308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testScript.Tc002_StaticDropdownAmazon -->
-    </test> <!-- regression -->
-    <test started-at="2026-03-31T02:10:24 IST" name="smoke" finished-at="2026-03-31T02:11:59 IST" duration-ms="94916">
-      <class name="testScript.Tc001_LoginHRMS">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:10:49 IST" name="setup" finished-at="2026-03-31T02:10:51 IST" duration-ms="1852" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="varifyHRMSLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:10:51 IST" name="varifyHRMSLoginFunctionality" data-provider="credentials" finished-at="2026-03-31T02:11:06 IST" duration-ms="14625" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- varifyHRMSLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:11:06 IST" name="tearDown" finished-at="2026-03-31T02:11:09 IST" duration-ms="3325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:11:09 IST" name="setup" finished-at="2026-03-31T02:11:11 IST" duration-ms="1599" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="varifyHRMSLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:11:11 IST" name="varifyHRMSLoginFunctionality" data-provider="credentials" finished-at="2026-03-31T02:11:21 IST" duration-ms="10287" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- varifyHRMSLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:11:21 IST" name="tearDown" finished-at="2026-03-31T02:11:24 IST" duration-ms="3280" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:11:24 IST" name="setup" finished-at="2026-03-31T02:11:26 IST" duration-ms="1697" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="varifyHRMSLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:11:26 IST" name="varifyHRMSLoginFunctionality" data-provider="credentials" finished-at="2026-03-31T02:11:37 IST" duration-ms="10716" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- varifyHRMSLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:11:37 IST" name="tearDown" finished-at="2026-03-31T02:11:40 IST" duration-ms="3308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:11:40 IST" name="setup" finished-at="2026-03-31T02:11:42 IST" duration-ms="1637" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="varifyHRMSLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:11:42 IST" name="varifyHRMSLoginFunctionality" data-provider="credentials" finished-at="2026-03-31T02:11:56 IST" duration-ms="14227" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin124]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- varifyHRMSLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.Tc001_LoginHRMS@49e5f737]" started-at="2026-03-31T02:11:56 IST" name="tearDown" finished-at="2026-03-31T02:11:59 IST" duration-ms="3295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testScript.Tc001_LoginHRMS -->
+    <test started-at="2026-04-03T18:04:28 IST" name="Default test" finished-at="2026-04-03T18:04:53 IST" duration-ms="25556">
       <class name="testScript.Tc004_Iframe">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScript.Tc004_Iframe@445b295b]" started-at="2026-03-31T02:10:24 IST" name="setup" finished-at="2026-03-31T02:10:26 IST" duration-ms="1732" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScript.Tc004_Iframe@292b08d6]" started-at="2026-04-03T18:04:28 IST" name="setup" finished-at="2026-04-03T18:04:32 IST" duration-ms="3302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="handleIframe()[pri:0, instance:testScript.Tc004_Iframe@445b295b]" started-at="2026-03-31T02:10:26 IST" name="handleIframe" finished-at="2026-03-31T02:10:44 IST" duration-ms="18358" status="PASS">
+        <test-method signature="handleIframe()[pri:0, instance:testScript.Tc004_Iframe@292b08d6]" started-at="2026-04-03T18:04:32 IST" name="handleIframe" finished-at="2026-04-03T18:04:50 IST" duration-ms="18059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleIframe -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.Tc004_Iframe@445b295b]" started-at="2026-03-31T02:10:44 IST" name="tearDown" finished-at="2026-03-31T02:10:48 IST" duration-ms="3467" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.Tc004_Iframe@292b08d6]" started-at="2026-04-03T18:04:50 IST" name="tearDown" finished-at="2026-04-03T18:04:53 IST" duration-ms="3424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testScript.Tc004_Iframe -->
-    </test> <!-- smoke -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

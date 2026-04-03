@@ -8,7 +8,7 @@ public class ReadConfig {
 	
 	//Create object of Properties class
 	Properties properties;
-	String filePath = "E:\\InfoEge Automation Project\\practice\\src\\main\\java\\resourceProperties\\config.properties";
+	String filePath = "E:\\InfoEge Automation Project\\AMSHybridFrameworkV1\\src\\main\\java\\resourceProperties\\config.properties";
 	
 	//Constructor
 	public ReadConfig() 
